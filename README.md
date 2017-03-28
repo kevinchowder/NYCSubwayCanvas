@@ -12,7 +12,7 @@ to various subway stations.
 
 ## Assumptions
 
-1. **Family Attitudes Influence Career Choice** - A social science study
+1) **Family Attitudes Influence Career Choice** - A social science study
 found that the most influential factor in a child's decision to pursue a
 career in STEM was parental encouragement (Rodrigues et al. 2011).
 Therefore, I assume that canvassing areas with a higher
@@ -20,7 +20,7 @@ proportion of families with children would be an effective strategy to
 engage parents on issues surrounding gender and STEM professions, thereby
 increasing the number of women in tech.
 
-2. **Economic Diversity Affects Political Participation** - In researching
+2) **Economic Diversity Affects Political Participation** - In researching
 strategies for canvassing strangers, I came across an interesting research
 paper that showed that the level of economic inequality in an individual's
 community can be correlated with the frequency with which residents choose to
@@ -32,7 +32,7 @@ neighborhoods that have a high degree of economic
 diversity may be one way to increase responsiveness to canvassing, since
 people are likely to be more receptive to socially-based political activities.
 
-3. **Number of Targeted Stations** - Using the National Center for Women and
+3) **Number of Targeted Stations** - Using the National Center for Women and
 Information Technology as an example, about $10,000 of the budget
 was directed toward fundraising efforts (obtained from
 https://www2.guidestar.org/profile/68-0591481).
@@ -45,22 +45,22 @@ for one week working M-F, 8 hours a day.
 
 ## Approach
 
-1. **Family Attitudes Influence Career Choice** - I found a dataset from
+1) **Family Attitudes Influence Career Choice** - I found a dataset from
 the U.S. Census bureau  - American Community Survey 5-year estimates
 that gives the number of children under 18 years old by zip code and normalized
 based on the max and min of this dataset.
 
-2. **Economic Diversity Affects Political Participation** - I found
+2) **Economic Diversity Affects Political Participation** - I found
 another dataset from the U.S. Census bureau - American Community Survey
 5-year estimates that gives the Gini coefficient by zip code.
 
-3. I linked the household children data and the list of Gini coefficients
+3) I linked the household children data and the list of Gini coefficients
 by bringing in two more datasets -
 one contains a list of zip codes and their longitude/latitude coordinates,
 while the other contains the list of all NYC subway stations and their
 geographic coordinates.
   
-  Using the Haversine formula, I computed the shorted distance between
+Using the Haversine formula, I computed the shorted distance between
 each station and the set of each zip code coordinates. I then assigned
 the zip code of the minimum distance to each station. Using this zipcode, I was
 able to merge the dataframes from 1) and 2).
@@ -71,7 +71,7 @@ notebook), but the turnstiles were identified using station name strings, which
 are not unique. For instance, there is an 86th St station in Manhattan,
 but there is also one in Brooklyn as well.
   
-  Instead, I used the data found on the MTA website (http://web.mta.info/nyct/facts/ridership/ridership_sub.htm)
+Instead, I used the data found on the MTA website (http://web.mta.info/nyct/facts/ridership/ridership_sub.htm)
 which lists weekday ridership by borough and by station, which will reduce station
 redundancy and provide a more accurate description of station traffic.
 One reddit user cleaned this data, which made it easy to use:
@@ -101,7 +101,7 @@ ridership data.
 
 ## Final Recommendations
 
-# Station List
+### Station List
 
 ![Final DF](finaldf.png)
 
@@ -115,7 +115,7 @@ Brighton Line as well.
 
 ## Lessons Learned
 
-Personally, I learned to try to think ahead when I know
+I learned to try to think ahead when I know
 I will have to eventually join the data using a certain unique identifier.
 
 I also learned that I need to constantly be checking and verifying the data
