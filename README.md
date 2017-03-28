@@ -12,7 +12,7 @@ to various subway stations.
 
 ## Assumptions
 
-My assumptions are described in more detail in the [MVP](https://github.com/kevinchowder/NYCSubwayCanvas/blob/master/NYC%20Subway_MVP.md)
+My assumptions are described in more detail in the [NYC Subway MVP](https://github.com/kevinchowder/NYCSubwayCanvas/blob/master/NYC%20Subway_MVP.md)
 
 1) **Family Attitudes Influence Career Choice** - A social science study
 found that the most influential factor in a child's decision to pursue a
