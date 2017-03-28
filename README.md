@@ -77,8 +77,8 @@ cleaned this data, which made it easy to use:
 
 ## Cleaning the Data & Finding Target Stations
 
-This notebook details the process of cleaning the data and finding target
-stations -
+This [Subway Canvassing Data Cleaning Notebook](Subway Canvassing Data Cleaning.ipynb) 
+details the process of cleaning the data and finding target stations.
   
 I normalized station ridership data based on the minimum and maximum traffic,
 multiplied by the number of children under 18 in households (also normalized
