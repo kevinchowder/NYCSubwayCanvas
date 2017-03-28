@@ -103,7 +103,7 @@ ridership data.
 
 # Station List
 
-![Final DF](MTA Project/finaldf.png)
+![Final DF](finaldf.png)
 
 The stations chosen for canvassing are shown in the table above and represented
 using their geographic coordinates below. The locations are spread out in
@@ -111,7 +111,7 @@ Brooklyn, Manhattan, and Queens. It is interesting that there are two
 locations on the Broadway - 7 Ave line, and two locations on the Broadway -
 Brighton Line as well.
 
-![Target Locations](MTA Project/targetlocations.png)
+![Target Locations](targetlocations.png)
 
 ## Lessons Learned
 
