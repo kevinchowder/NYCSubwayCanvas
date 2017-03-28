@@ -12,6 +12,8 @@ to various subway stations.
 
 ## Assumptions
 
+My assumptions are described in more detail in the MVP.
+
 1) **Family Attitudes Influence Career Choice** - A social science study
 found that the most influential factor in a child's decision to pursue a
 career in STEM was parental encouragement (Rodrigues et al. 2011).
@@ -59,7 +61,7 @@ each station and the set of each zip code coordinates. I then assigned
 the zip code of the minimum distance to each station. Using this zipcode, I was
 able to merge the dataframes from 1) and 2).
 
-3. **Station Ridership** - I had originally found the station ridership
+4) **Station Ridership** - I had originally found the station ridership
 by analyzing the turnstile data provided on the MTA website (detailed in this
 notebook), but the turnstiles were identified using station name strings, which
 are not unique. For instance, there is an 86th St station in Manhattan,
