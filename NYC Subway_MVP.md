@@ -21,7 +21,7 @@ shown below:
 
 ### Initial Research Findings
 
-1. **Family Attitudes ** - A social science study found that the most
+1. **Family Attitudes** - A social science study found that the most
 influential factor in a child's decision to pursue a career in STEM was parental
 encouragement (Rodrigues et al. 2011). Therefore, canvassing areas with a higher
 proportion of families with children would be an effective strategy to
@@ -37,20 +37,20 @@ politics, and signing a petition. I choose to focus on the behavior of signing a
 petition in person, which would most closely relate to the experience of
 canvassing.
 
-  While low-income individuals are equally likely to sign a petition regardless
+...While low-income individuals are equally likely to sign a petition regardless
 of neighborhood income levels, the number of high-status individuals who signed
 petitions in-person increased by 13% when going from areas with a low to high
 level of contrast in income level. In addition, there was a 7% increase for low
 income individuals and a 13% increase for high income individuals when signing
 a petition face-to-face instead of online.
 
-  Targeting subway stops in neighborhoods that have a high degree of economic
+...Targeting subway stops in neighborhoods that have a high degree of economic
 inequality may be one way to increase responsiveness to canvassing.
 
 3. **Number of Targeted Stations** - Using the National Center for Women and
 Information Technology as an example, about $10,000 of the budget
-was directed toward fundraising efforts (obtained from
-https://www2.guidestar.org/profile/68-0591481). Therefore, canvassing should
+was directed toward fundraising efforts (obtained from 
+[guidestar.org](https://www2.guidestar.org/profile/68-0591481). Therefore, canvassing should
 realistically not exceed a total budget of $10,000.
 Assuming a canvasser would be paid at $15/hour and that canvassers would be
 dispatched in pairs (a common practice), the campaign could cover 8 stations
