@@ -77,7 +77,7 @@ cleaned this data, which made it easy to use:
 
 ## Cleaning the Data & Finding Target Stations
 
-This [Subway Canvassing Data Cleaning Notebook](Subway Canvassing Data Cleaning.ipynb) 
+This [Subway Canvassing Data Cleaning Notebook](https://github.com/kevinchowder/NYCSubwayCanvas/blob/master/Subway%20Canvassing%20Data%20Cleaning.ipynb) 
 details the process of cleaning the data and finding target stations.
   
 I normalized station ridership data based on the minimum and maximum traffic,
