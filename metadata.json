@@ -1,0 +1,56 @@
+{
+    "release": {
+        "id": "acs2015_5yr",
+        "name": "ACS 2015 5-year",
+        "years": "2011-2015"
+    },
+    "tables": {
+        "B09001": {
+            "title": "Population Under 18 Years by Age",
+            "universe": "Population Under 18 Years",
+            "denominator_column_id": "B09001001",
+            "columns": {
+                "B09001001": {
+                    "name": "Total:",
+                    "indent": 0
+                },
+                "B09001002": {
+                    "name": "In households:",
+                    "indent": 1
+                },
+                "B09001003": {
+                    "name": "Under 3 years",
+                    "indent": 2
+                },
+                "B09001004": {
+                    "name": "3 and 4 years",
+                    "indent": 2
+                },
+                "B09001005": {
+                    "name": "5 years",
+                    "indent": 2
+                },
+                "B09001006": {
+                    "name": "6 to 8 years",
+                    "indent": 2
+                },
+                "B09001007": {
+                    "name": "9 to 11 years",
+                    "indent": 2
+                },
+                "B09001008": {
+                    "name": "12 to 14 years",
+                    "indent": 2
+                },
+                "B09001009": {
+                    "name": "15 to 17 years",
+                    "indent": 2
+                },
+                "B09001010": {
+                    "name": "In group quarters",
+                    "indent": 1
+                }
+            }
+        }
+    }
+}
