@@ -12,7 +12,7 @@ to various subway stations.
 
 ## Assumptions
 
-1. **Family Attitudes Influence Career Choice ** - A social science study
+1. **Family Attitudes Influence Career Choice** - A social science study
 found that the most influential factor in a child's decision to pursue a
 career in STEM was parental encouragement (Rodrigues et al. 2011).
 Therefore, I assume that canvassing areas with a higher
@@ -45,7 +45,7 @@ for one week working M-F, 8 hours a day.
 
 ## Approach
 
-1. **Family Attitudes Influence Career Choice ** - I found a dataset from
+1. **Family Attitudes Influence Career Choice** - I found a dataset from
 the U.S. Census bureau  - American Community Survey 5-year estimates
 that gives the number of children under 18 years old by zip code and normalized
 based on the max and min of this dataset.
@@ -59,8 +59,8 @@ by bringing in two more datasets -
 one contains a list of zip codes and their longitude/latitude coordinates,
 while the other contains the list of all NYC subway stations and their
 geographic coordinates.
-
-Using the Haversine formula, I computed the shorted distance between
+  
+  Using the Haversine formula, I computed the shorted distance between
 each station and the set of each zip code coordinates. I then assigned
 the zip code of the minimum distance to each station. Using this zipcode, I was
 able to merge the dataframes from 1) and 2).
@@ -70,8 +70,8 @@ by analyzing the turnstile data provided on the MTA website (detailed in this
 notebook), but the turnstiles were identified using station name strings, which
 are not unique. For instance, there is an 86th St station in Manhattan,
 but there is also one in Brooklyn as well.
-
-Instead, I used the data found on the MTA website (http://web.mta.info/nyct/facts/ridership/ridership_sub.htm)
+  
+  Instead, I used the data found on the MTA website (http://web.mta.info/nyct/facts/ridership/ridership_sub.htm)
 which lists weekday ridership by borough and by station, which will reduce station
 redundancy and provide a more accurate description of station traffic.
 One reddit user cleaned this data, which made it easy to use:
@@ -82,17 +82,15 @@ https://www.reddit.com/r/nyc/comments/3fmju2/annual_subway_ridership_in_nyc_by_s
 
 This notebook details the process of cleaning the data and finding target
 stations -
-
-I normalized station ridership data based on the minimum and maximum traffic,
+  
+  I normalized station ridership data based on the minimum and maximum traffic,
 multiplied by the number of children under 18 in households (also normalized
 by the max and min of the dataset), and multiplied this by the Gini
 coefficient in order to obtain a canvassing factor for each station.
-
-Notably, there were several stations that did not have Gini coefficients or
+  Notably, there were several stations that did not have Gini coefficients or
 estimates for children in households, so these stations were taken out of
 the consideration set.
-
-Additionally, in order to match the Gini coefficient and children in household
+  Additionally, in order to match the Gini coefficient and children in household
 data with station ridership data using the stop name, which was not unique, I
 split up the ridership data by borough. For stations with the same name
 within each borough (just a few examples in each), I then sorted the data and
