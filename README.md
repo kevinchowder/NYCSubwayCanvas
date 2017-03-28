@@ -25,9 +25,7 @@ strategies for canvassing strangers, I came across an interesting research
 paper that showed that the level of economic inequality in an individual's
 community can be correlated with the frequency with which residents choose to
 engage in socially-based political activities, such as voting, discussing
-politics, and signing a petition.
-
-I assume that targeting subway stops in
+politics, and signing a petition. I assume that targeting subway stops in
 neighborhoods that have a high degree of economic
 diversity may be one way to increase responsiveness to canvassing, since
 people are likely to be more receptive to socially-based political activities.
@@ -35,9 +33,7 @@ people are likely to be more receptive to socially-based political activities.
 3) **Number of Targeted Stations** - Using the National Center for Women and
 Information Technology as an example, about $10,000 of the budget
 was directed toward fundraising efforts (obtained from
-https://www2.guidestar.org/profile/68-0591481).
-
-As a result, I assume that canvassing should
+https://www2.guidestar.org/profile/68-0591481).  As a result, I assume that canvassing should
 realistically not exceed a total budget of $10,000. Assuming a canvasser would
 be paid at $15/hour and that canvassers would be
 dispatched in pairs (a common practice), the campaign could cover 8 stations
@@ -58,9 +54,7 @@ another dataset from the U.S. Census bureau - American Community Survey
 by bringing in two more datasets -
 one contains a list of zip codes and their longitude/latitude coordinates,
 while the other contains the list of all NYC subway stations and their
-geographic coordinates.
-  
-Using the Haversine formula, I computed the shorted distance between
+geographic coordinates. Using the Haversine formula, I computed the shorted distance between
 each station and the set of each zip code coordinates. I then assigned
 the zip code of the minimum distance to each station. Using this zipcode, I was
 able to merge the dataframes from 1) and 2).
@@ -69,9 +63,7 @@ able to merge the dataframes from 1) and 2).
 by analyzing the turnstile data provided on the MTA website (detailed in this
 notebook), but the turnstiles were identified using station name strings, which
 are not unique. For instance, there is an 86th St station in Manhattan,
-but there is also one in Brooklyn as well.
-  
-Instead, I used the data found on the MTA website (http://web.mta.info/nyct/facts/ridership/ridership_sub.htm)
+but there is also one in Brooklyn as well. Instead, I used the data found on the MTA website (http://web.mta.info/nyct/facts/ridership/ridership_sub.htm)
 which lists weekday ridership by borough and by station, which will reduce station
 redundancy and provide a more accurate description of station traffic.
 One reddit user cleaned this data, which made it easy to use:
@@ -83,14 +75,16 @@ https://www.reddit.com/r/nyc/comments/3fmju2/annual_subway_ridership_in_nyc_by_s
 This notebook details the process of cleaning the data and finding target
 stations -
   
-  I normalized station ridership data based on the minimum and maximum traffic,
+I normalized station ridership data based on the minimum and maximum traffic,
 multiplied by the number of children under 18 in households (also normalized
 by the max and min of the dataset), and multiplied this by the Gini
 coefficient in order to obtain a canvassing factor for each station.
-  Notably, there were several stations that did not have Gini coefficients or
+
+Notably, there were several stations that did not have Gini coefficients or
 estimates for children in households, so these stations were taken out of
 the consideration set.
-  Additionally, in order to match the Gini coefficient and children in household
+
+Additionally, in order to match the Gini coefficient and children in household
 data with station ridership data using the stop name, which was not unique, I
 split up the ridership data by borough. For stations with the same name
 within each borough (just a few examples in each), I then sorted the data and
