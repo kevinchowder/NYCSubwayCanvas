@@ -37,14 +37,14 @@ politics, and signing a petition. I choose to focus on the behavior of signing a
 petition in person, which would most closely relate to the experience of
 canvassing.
 
-...While low-income individuals are equally likely to sign a petition regardless
+   While low-income individuals are equally likely to sign a petition regardless
 of neighborhood income levels, the number of high-status individuals who signed
 petitions in-person increased by 13% when going from areas with a low to high
 level of contrast in income level. In addition, there was a 7% increase for low
 income individuals and a 13% increase for high income individuals when signing
 a petition face-to-face instead of online.
 
-...Targeting subway stops in neighborhoods that have a high degree of economic
+   Targeting subway stops in neighborhoods that have a high degree of economic
 inequality may be one way to increase responsiveness to canvassing.
 
 3. **Number of Targeted Stations** - Using the National Center for Women and
