@@ -12,7 +12,7 @@ to various subway stations.
 
 ## Assumptions
 
-My assumptions are described in more detail in the MVP.
+My assumptions are described in more detail in the [MVP](NYC Subway_MVP)
 
 1) **Family Attitudes Influence Career Choice** - A social science study
 found that the most influential factor in a child's decision to pursue a
@@ -34,8 +34,9 @@ people are likely to be more receptive to socially-based political activities.
 
 3) **Number of Targeted Stations** - Using the National Center for Women and
 Information Technology as an example, about $10,000 of the budget
-was directed toward fundraising efforts (obtained from
-https://www2.guidestar.org/profile/68-0591481).  As a result, I assume that canvassing should
+was directed toward fundraising efforts (obtained from 
+[guidestar.org](https://www2.guidestar.org/profile/68-0591481).  
+As a result, I assume that canvassing should
 realistically not exceed a total budget of $10,000. Assuming a canvasser would
 be paid at $15/hour and that canvassers would be
 dispatched in pairs (a common practice), the campaign could cover 8 stations
@@ -52,7 +53,7 @@ based on the max and min of this dataset.
 another dataset from the U.S. Census bureau - American Community Survey
 5-year estimates that gives the Gini coefficient by zip code.
 
-3) I linked the household children data and the list of Gini coefficients
+3) **Finding Station Zipcode** - I linked the household children data and the list of Gini coefficients
 by bringing in two more datasets -
 one contains a list of zip codes and their longitude/latitude coordinates,
 while the other contains the list of all NYC subway stations and their
@@ -65,11 +66,13 @@ able to merge the dataframes from 1) and 2).
 by analyzing the turnstile data provided on the MTA website (detailed in this
 notebook), but the turnstiles were identified using station name strings, which
 are not unique. For instance, there is an 86th St station in Manhattan,
-but there is also one in Brooklyn as well. Instead, I used the data found on the MTA website (http://web.mta.info/nyct/facts/ridership/ridership_sub.htm)
+but there is also one in Brooklyn as well. Instead, I used the data found on the 
+[MTA website](http://web.mta.info/nyct/facts/ridership/ridership_sub.htm)
 which lists weekday ridership by borough and by station, which will reduce station
 redundancy and provide a more accurate description of station traffic.
-One reddit user cleaned this data, which made it easy to use:
-https://www.reddit.com/r/nyc/comments/3fmju2/annual_subway_ridership_in_nyc_by_station/
+One [reddit user](https://www.reddit.com/r/nyc/comments/3fmju2/annual_subway_ridership_in_nyc_by_station/) 
+cleaned this data, which made it easy to use:
+
 
 
 ## Cleaning the Data & Finding Target Stations
@@ -136,7 +139,7 @@ go about setting quotas or evaluate the effect of canvassing campaigns?
 
 ## Code Information
 
-The Subway Data Cleaning notebook explains the process for obtaining the
+The [Subway Data Cleaning notebook](Subway Canvassing Data Cleaning.ipynb) explains the process for obtaining the
 final recommendation list.
 
 ### Sources
