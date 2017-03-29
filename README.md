@@ -71,7 +71,7 @@ but there is also one in Brooklyn as well. Instead, I used the data found on the
 which lists weekday ridership by borough and by station, which will reduce station
 redundancy and provide a more accurate description of station traffic.
 One [reddit user](https://www.reddit.com/r/nyc/comments/3fmju2/annual_subway_ridership_in_nyc_by_station/) 
-cleaned this data, which made it easy to use:
+cleaned this data, which made it easy to use.
 
 
 
